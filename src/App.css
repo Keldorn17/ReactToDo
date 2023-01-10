@@ -1,0 +1,12 @@
+.myform{
+  max-width: 300px!important;
+}
+.todo{
+  max-width: 300px!important;
+}
+i{
+  cursor: pointer;
+}
+.holder{
+  margin-top: 10px;
+}
