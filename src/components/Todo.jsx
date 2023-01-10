@@ -59,11 +59,11 @@ export const Todo = () => {
             >
               <i
                 className={
-                  `fa-solid fa-check fa-2x ${obj.status === 1 && "text-success"}`
+                  `fa-solid fa-check fa-2x ${+obj.status === 1 && "text-success"}`
                 }
                 onClick={() => mutationUpdate.mutate({ id: obj.id })}
               ></i>
-              <span className={obj.status === 1 ? "text-decoration-line-through" : ""}>{obj.name}</span>
+              <span className={+obj.status === 1 ? "text-decoration-line-through" : ""}>{obj.name}</span>
               <i
                 className="fa-solid fa-trash text-danger fa-2x"
                 onClick={() => mutationDel.mutate({ id: obj.id })}
